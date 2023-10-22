@@ -1,4 +1,8 @@
-#include "common.h"
+#include <iostream>
+#include <windows.h>
+#include <vector>
+#include <conio.h>
+using namespace std;
 
 struct Product {
     string name;
@@ -60,17 +64,17 @@ void menu() {
     SetConsoleTextAttribute(h, 1);
     cout << "https://sunwayxfarms.com" << endl << endl;
     SetConsoleTextAttribute(h, 7);
-    cout << "Press ENTER to continue";
+    cout << "Press ENTER to continue" << endl;
     while (_getch() != 13) {}
 }
 
 void products() {
-    cout << "PRODUCTS" << endl;
-    cout << "MONTHLY GROWNER 1" << endl;
-    cout << "1) Salad lettuces - RM105" << endl;
-    cout << "2) Hearty Asian greens - RM105" << endl;
-    cout << "3) Salad & Asian Mix - RM105" << endl;
+    string vege[27]{"\nPRODUCTS","-----VEGETABLE SUBSCRIPTION-----","---------MONTHLY GROWNER--------","MONTHLY GROWNER 1 - Leafy","1) Salad lettuces - RM105","2) Hearty Asian greens - RM105","3) Salad & Asian Mix - RM105 \n","MONTHLY GROWNER 2 - Leafy","4) Salad lettuces - RM189","5) Hearty Asian Greens - RM189","6) Salad & Asian Mix - RM189 \n","MONTHLY GROWNER 3 - Leafy","7) Salad lettuces - RM270","8) Hearty Asian Greens - RM270","9) Salad & Asian Mix - RM270 \n","MONTHLY GROWNER - Fruity","10) MONTHLY GROWNER 1 - Fruity - RM120","11) MONTHLY GROWNER 2 -  Fruity - RM240 \n","---------ANNUAL GROWNER---------","ANNUAL GROWNER 1 - Leafy","12) Salad lettuces - RM1200","13) Hearty Asian Greens - RM1200","14) Salad & Asian Mix - RM1200 \n","----------DIY ECO KIT----------","15) Farm Kit - RM19","16) Compost Kit - RM49","17) Microgreens Kit - RM35"};
+    for (int i = 0; i < 26; i++){
+    cout << vege[i] << endl;
+    }
 }
+
 
 int main() {
     menu();
@@ -81,7 +85,6 @@ int main() {
         cout << "User: ";
         cin >> input;
         switch(input) {
-            case 1:
                 
         }
     }
