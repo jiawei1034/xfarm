@@ -64,7 +64,7 @@ void menu() {
     SetConsoleTextAttribute(h, 1);
     cout << "https://sunwayxfarms.com" << endl << endl;
     SetConsoleTextAttribute(h, 7);
-    cout << "Press ENTER to continue";
+    cout << "Press ENTER to continue" << endl;
     while (_getch() != 13) {}
 }
 
@@ -114,6 +114,7 @@ void products() {
         cout << vege[i] << endl;
     }
 }
+
 
 int main() {
     HANDLE h = GetStdHandle(STD_OUTPUT_HANDLE);
