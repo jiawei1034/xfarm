@@ -23,16 +23,15 @@ public:
             cout << "Your cart is empty." << endl;
             return;
         }
-        cout << "CART:" << endl;
+        cout << endl << "CART:" << endl;
         for (const Product& product : cart) {
             cout << product.name << " - RM" << product.price << endl; 
         }
     }
-
     double getTotalPrice() {      // Calculate and return the total price of items in the cart.
         double total = 0.0;
         for (const Product& product : cart) {
-            total += product.price;     // Calculate total item price.
+            total += product.price;     // Calculate total item price. 
         }
         return total;
     }
@@ -76,7 +75,12 @@ void displayProduct(ShoppingCart& cart, const string& productName, double produc
     while (true) {
         int input = _getch();
         if (input == '7') {
+            int z;
+            cout << endl << endl << "Quantity: ";
+            cin >> z;
+            for(int i = 0; i < z; i++) {
             cart.addToCart(productName, productPrice);
+            }
             SetConsoleTextAttribute(h, 2);
             cout << endl << endl << "ADDED TO CART!" << endl << endl;
             SetConsoleTextAttribute(h, 7);
@@ -112,11 +116,12 @@ int main() {
         system("cls");
         cout << "Vegetable Subscription" << endl;
         cout << "1) Monthly Growner" << endl;
-        cout << "2) Annual Growner" << endl << endl;
+        cout << "2) Annual Growner" << endl;
+        cout << "-----------------------" << endl;
         cout << "DIY eco-kits" << endl;
         cout << "3) Farm Kit" << endl;
         cout << "4) Compost Kit" << endl;
-        cout << "5) Microgreen Kit" << endl;
+        cout << "5) Microgreen Kit" << endl << endl;
         cout << "0) Checkout" << endl << endl;
         cout << "User: ";
         cin >> input;
@@ -360,3 +365,4 @@ int main() {
     }
     return 0;
 }
+
