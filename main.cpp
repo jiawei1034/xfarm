@@ -23,7 +23,7 @@ public:
             cout << "Your cart is empty." << endl;
             return;
         }
-        cout << endl << "CART:" << endl;
+        cout << "CART:" << endl;
         for (const Product& product : cart) {
             cout << product.name << " - RM" << product.price << endl; 
         }
@@ -109,13 +109,20 @@ int main() {
     int input;
     menu();
     while (!quit) {     // Program will run until '0' is pressed.
-        cout << endl << endl << "VEGETABLE SUBSCRIPTION" << endl;
+        system("cls");
+        cout << "Vegetable Subscription" << endl;
         cout << "1) Monthly Growner" << endl;
         cout << "2) Annual Growner" << endl << endl;
+        cout << "DIY eco-kits" << endl;
+        cout << "3) Farm Kit" << endl;
+        cout << "4) Compost Kit" << endl;
+        cout << "5) Microgreen Kit" << endl;
+        cout << "0) Checkout" << endl << endl;
         cout << "User: ";
         cin >> input;
         switch(input) {
             case 1:
+                system("cls");
                 cout << "MONTHLY GROWNER 1 - LEAFY" << endl;
                 cout << "1) Salad lettuces - RM105.00" << endl;
                 cout << "2) Hearty asian greens - RM105.00" << endl;
@@ -130,12 +137,11 @@ int main() {
                 cout << "9) Salad & Asian Mix - RM270.00" << endl << endl;
                 cout << "10) MONTHLY GROWNER 1 - FRUITY - RM120.00" << endl;
                 cout << "11) MONTHLY GROWNER 2 - FRUITY - RM240.00" << endl << endl;
-                
-
                 cout << "User: ";
                 cin >> input;
                 switch(input) {
                     case 1:
+                        system("cls");
                         cout << "MONTHLY GROWNER 1 - LEAFY" << endl;
                         cout << "Salad lettuces" << endl;
                         cout << "Inclusive of: " << endl;
@@ -145,6 +151,7 @@ int main() {
                         displayProduct(cart, "Salad lettuces", 105.00);
                         break;
                     case 2:
+                        system("cls");
                         cout << "MONTHLY GROWNER 1 - LEAFY" << endl;
                         cout << "Hearty Asian greens" << endl;
                         cout << "Inclusive of: " << endl;
@@ -154,6 +161,7 @@ int main() {
                         displayProduct(cart, "Hearty Asian greens", 105.00);
                         break;
                     case 3:
+                        system("cls");
                         cout << "MONTHLY GROWNER 1 - LEAFY" << endl;
                         cout << "Salad & Asian Mix" << endl;
                         cout << "Inclusive of: " << endl;
@@ -163,6 +171,7 @@ int main() {
                         displayProduct(cart, "Salad & Asian Mix", 105.00);
                         break;
                     case 4:
+                        system("cls");
                         cout << "MONTHLY GROWNER 2 - LEAFY" << endl;
                         cout << "Salad lettuces" << endl;
                         cout << "Inclusive of: " << endl;
@@ -172,6 +181,7 @@ int main() {
                         displayProduct(cart, "Salad lettuces", 189.00);
                         break;
                     case 5:
+                        system("cls");
                         cout << "MONTHLY GROWNER 2 - LEAFY" << endl;
                         cout << "Hearty Asian greens" << endl;
                         cout << "Inclusive of: " << endl;
@@ -181,6 +191,7 @@ int main() {
                         displayProduct(cart, "Hearty Asian greens", 189.00);
                         break;
                     case 6:
+                        system("cls");
                         cout << "MONTHLY GROWNER 2 - LEAFY" << endl;
                         cout << "Salad & Asian Mix" << endl;
                         cout << "Inclusive of: " << endl;
@@ -190,6 +201,7 @@ int main() {
                         displayProduct(cart, "Salad & Asian Mix", 189.00);
                         break;
                     case 7:
+                        system("cls");
                         cout << "MONTHLY GROWNER 3 - LEAFY" << endl;
                         cout << "Salad lettuces" << endl;
                         cout << "Inclusive of: " << endl;
@@ -199,6 +211,7 @@ int main() {
                         displayProduct(cart, "Salad lettuces", 270.00);
                         break;
                     case 8:
+                        system("cls");
                         cout << "MONTHLY GROWNER 3 - LEAFY" << endl;
                         cout << "Hearty Asian Greens" << endl;
                         cout << "Inclusive of: " << endl;
@@ -208,6 +221,7 @@ int main() {
                         displayProduct(cart, "Hearty Asian Greens", 270.00);
                         break;
                     case 9:
+                        system("cls");
                         cout << "MONTHLY GROWNER 3 - LEAFY" << endl;
                         cout << "Salad & Asian Mix" << endl;
                         cout << "Inclusive of: " << endl;
@@ -217,6 +231,7 @@ int main() {
                         displayProduct(cart, "Salad & Asian Mix", 270.00);
                         break;
                     case 10:
+                        system("cls");
                         cout << "MONTHLY GROWNER 1 - FRUITY" << endl;
                         cout << "Inclusive of: " << endl;
                         cout << "Min. 1.7KG of fruity vegetables x 4 weeks/ month" << endl;
@@ -225,6 +240,7 @@ int main() {
                         displayProduct(cart, "MONTHLY GROWNER 1 - FRUITY", 120.00);
                         break;
                     case 11:
+                        system("cls");
                         cout << "MONTHLY GROWNER 2 - FRUITY" << endl;
                         cout << "Inclusive of: " << endl;
                         cout << "Min. 3.4KG of fruity vegetables x 4 weeks/ month" << endl;
@@ -233,6 +249,7 @@ int main() {
                         displayProduct(cart, "MONTHLY GROWNER 2 - FRUITY", 240.00);
                         break;
                     default:
+                        system("cls");
                         SetConsoleTextAttribute(h, 4);
                         cout << endl << "Invalid Input" << endl;
                         SetConsoleTextAttribute(h, 7);
@@ -242,15 +259,16 @@ int main() {
                 }
                 break;
             case 2:
+                system("cls");
                 cout << "ANNUAL GROWNER 1 - LEAFY" << endl;
                 cout << "1) Salad lettuces - RM1200.00" << endl;
                 cout << "2) Hearty Asian greens - RM1200.00" << endl;
-                cout << "3) Salad & Asian Mix - RM1200.00" << endl;
-
+                cout << "3) Salad & Asian Mix - RM1200.00" << endl << endl;
                 cout << "User: ";
                 cin >> input;
                 switch(input) {
                     case 1:
+                        system("cls");
                         cout << "ANNUAL GROWNER 1 - LEAFY" << endl;
                         cout << "Salad lettuces" << endl;
                         cout << "Inclusive of: " << endl;
@@ -260,6 +278,7 @@ int main() {
                         displayProduct(cart, "Salad lettuces", 1200.00);
                         break;
                     case 2:
+                        system("cls");
                         cout << "ANNUAL GROWNER 1 - LEAFY" << endl;
                         cout << "Hearty Asian greens" << endl;
                         cout << "Inclusive of: " << endl;
@@ -269,6 +288,7 @@ int main() {
                         displayProduct(cart, "Hearty Asian greens", 1200.00);
                         break;
                     case 3:
+                        system("cls");
                         cout << "ANNUAL GROWNER 1 - LEAFY" << endl;
                         cout << "Salad & Asian Mix" << endl;
                         cout << "Inclusive of: " << endl;
@@ -278,6 +298,7 @@ int main() {
                         displayProduct(cart, "Salad & Asian Mix", 1200.00);
                         break;
                     default:
+                        system("cls");
                         SetConsoleTextAttribute(h, 4);
                         cout << endl << "Invalid Input" << endl;
                         SetConsoleTextAttribute(h, 7);
@@ -287,27 +308,41 @@ int main() {
                 }
                 break;
             case 3:
-                displayProduct(cart, "Salad & Asian Mix", 105.00);
+                system("cls");
+                cout << "FARM Kit" << endl;
+                cout << "Inclusive of:" << endl;
+                cout << "1. 1 packet Pak Choy seeds" << endl;
+                cout << "2. x2 netpot holder rings" << endl;
+                cout << "3. AB nutrients (1 bottle each)" << endl;
+                cout << "4. Clay pebbles" << endl;
+                cout << "5. Netpot" << endl;
+                cout << "6. x4 sponges" << endl << endl;
+                cout << "Price: RM19.00" << endl << endl;
+                displayProduct(cart, "Farm Kit", 19.00);
                 break;
             case 4:
-                displayProduct(cart, "Salad lettuces", 189.00);
+                system("cls");
+                cout << "COMPOST KIT" << endl;
+                cout << "Inclusive of:" << endl;
+                cout << "1. Compost bag" << endl;
+                cout << "2. 1 pack of bokashi powder" << endl;
+                cout << "3. 1 set of tools" << endl << endl;
+                cout << "Price: RM49.00" << endl << endl;
+                displayProduct(cart, "Compost Kit", 49.00);
                 break;
             case 5:
-                displayProduct(cart, "Hearty Asian greens", 189.00);
-                break;
-            case 6:
-                displayProduct(cart, "Salad & Asian Mix", 189.00);
-                break;
-            case 7:
-                displayProduct(cart, "Salad lettuces", 270.00);
-                break;
-            case 8:
-                displayProduct(cart, "Hearty Asian Greens", 270.00);
-                break;
-            case 9:
-                displayProduct(cart, "Salad & Asian Mix", 270.00);
+                system("cls");
+                cout << "MICROGREENS KIT" << endl;
+                cout << "Inclusive of:" << endl;
+                cout << "1. x2 types of microgreen seeds" << endl;
+                cout << "2. Peatmoss" << endl;
+                cout << "3. Gardening tool" << endl;
+                cout << "4. Grow Tray" << endl;
+                cout << "5. Grow Guide" << endl << endl;
+                displayProduct(cart, "Microgreens Kit", 35.00);
                 break;
             default:
+                system("cls");
                 SetConsoleTextAttribute(h, 4);
                 cout << endl << "Invalid Input" << endl;
                  SetConsoleTextAttribute(h, 7);
@@ -315,6 +350,7 @@ int main() {
                 while (_getch() != 13) {}
                 break;
             case 0:
+                system("cls");
                 cart.displayCart();     // Display the shopping cart items.
                 double totalPrice = cart.getTotalPrice();
                 cout << endl << "Total Price: RM" << totalPrice << endl;    // Display the total price.
