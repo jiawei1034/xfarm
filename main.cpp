@@ -68,7 +68,7 @@ void menu() {
 }
 
 //function to comfirm adding product to cart and display
-void displayProduct(ShoppingCart& cart, const string& productName, double productPrice) {
+void addProduct(ShoppingCart& cart, const string& productName, double productPrice) {
     HANDLE h = GetStdHandle(STD_OUTPUT_HANDLE);
     SetConsoleTextAttribute(h, 10);
     cout << endl << "ADD TO CART?" << endl << endl;
@@ -186,7 +186,7 @@ int main() {
                         cout << "Min. 0.75KG of leafy vegetables x 4 weeks/ month" << endl;
                         cout << "Suitable for 2-3 pax households" << endl << endl;
                         cout << "RM105.00" << endl << endl;
-                        displayProduct(cart, "Salad lettuces", 105.00);
+                        addProduct(cart, "Salad lettuces", 105.00);
                         break;
                     case 2:
                         system("cls");
@@ -198,7 +198,7 @@ int main() {
                         cout << "Min. 0.75KG of leafy vegetables x 4 weeks/ month" << endl;
                         cout << "Suitable for 2-3 pax households" << endl << endl;
                         cout << "RM105.00" << endl << endl;
-                        displayProduct(cart, "Hearty Asian greens", 105.00);
+                        addProduct(cart, "Hearty Asian greens", 105.00);
                         break;
                     case 3:
                         system("cls");
@@ -210,7 +210,7 @@ int main() {
                         cout << "Min. 0.75KG of leafy vegetables x 4 weeks/ month" << endl;
                         cout << "Suitable for 2-3 pax households" << endl << endl;
                         cout << "RM105.00" << endl << endl;
-                        displayProduct(cart, "Salad & Asian Mix", 105.00);
+                        addProduct(cart, "Salad & Asian Mix", 105.00);
                         break;
                     case 4:
                         system("cls");
@@ -222,7 +222,7 @@ int main() {
                         cout << "Min. 1.5KG of leafy vegetables x 4 weeks/ month" << endl;
                         cout << "Suitable for 4-6 pax households" << endl << endl;
                         cout << "RM189.00" << endl << endl;
-                        displayProduct(cart, "Salad lettuces", 189.00);
+                        addProduct(cart, "Salad lettuces", 189.00);
                         break;
                     case 5:
                         system("cls");
@@ -234,7 +234,7 @@ int main() {
                         cout << "Min. 1.5KG of leafy vegetables x 4 weeks/ month" << endl;
                         cout << "Suitable for 4-6 pax households" << endl << endl;
                         cout << "RM189.00" << endl << endl;
-                        displayProduct(cart, "Hearty Asian greens", 189.00);
+                        addProduct(cart, "Hearty Asian greens", 189.00);
                         break;
                     case 6:
                         system("cls");
@@ -246,7 +246,7 @@ int main() {
                         cout << "Min. 1.5KG of leafy vegetables x 4 weeks/ month" << endl;
                         cout << "Suitable for 4-6 pax households" << endl << endl;
                         cout << "RM189.00" << endl << endl;
-                        displayProduct(cart, "Salad & Asian Mix", 189.00);
+                        addProduct(cart, "Salad & Asian Mix", 189.00);
                         break;
                     case 7:
                         system("cls");
@@ -258,7 +258,7 @@ int main() {
                         cout << "Min. 2.2KG of leafy vegetables x 4 weeks/ month" << endl;
                         cout << "Suitable for 7-10 pax households" << endl << endl;
                         cout << "RM270.00" << endl << endl;
-                        displayProduct(cart, "Salad lettuces", 270.00);
+                        addProduct(cart, "Salad lettuces", 270.00);
                         break;
                     case 8:
                         system("cls");
@@ -270,7 +270,7 @@ int main() {
                         cout << "Min. 2.2KG of leafy vegetables x 4 weeks/ month" << endl;
                         cout << "Suitable for 7-10 pax households" << endl << endl;
                         cout << "RM270.00" << endl << endl;
-                        displayProduct(cart, "Hearty Asian Greens", 270.00);
+                        addProduct(cart, "Hearty Asian Greens", 270.00);
                         break;
                     case 9:
                         system("cls");
@@ -282,7 +282,7 @@ int main() {
                         cout << "Min. 2.2KG of leafy vegetables x 4 weeks/ month" << endl;
                         cout << "Suitable for 7-10 pax households" << endl << endl;
                         cout << "RM270.00" << endl << endl;
-                        displayProduct(cart, "Salad & Asian Mix", 270.00);
+                        addProduct(cart, "Salad & Asian Mix", 270.00);
                         break;
                     case 10:
                         system("cls");
@@ -293,7 +293,7 @@ int main() {
                         cout << "Min. 1.7KG of fruity vegetables x 4 weeks/ month" << endl;
                         cout << "Suitable for 2-3 pax households" << endl << endl;
                         cout << "RM120.00" << endl << endl;
-                        displayProduct(cart, "MONTHLY GROWNER 1 - FRUITY", 120.00);
+                        addProduct(cart, "MONTHLY GROWNER 1 - FRUITY", 120.00);
                         break;
                     case 11:
                         system("cls");
@@ -304,7 +304,7 @@ int main() {
                         cout << "Min. 3.4KG of fruity vegetables x 4 weeks/ month" << endl;
                         cout << "Suitable for 4-6 pax households" << endl << endl;
                         cout << "RM240.00" << endl << endl;
-                        displayProduct(cart, "MONTHLY GROWNER 2 - FRUITY", 240.00);
+                        addProduct(cart, "MONTHLY GROWNER 2 - FRUITY", 240.00);
                         break;
                     case 0: // return to main menu.
                     break;
@@ -343,7 +343,7 @@ int main() {
                         cout << "Min. 0.75KG of leafy vegetables x 4 weeks per month x 12 months" << endl;
                         cout << "Suitable for 2-3 pax households" << endl << endl;
                         cout << "RM1200.00" << endl << endl;
-                        displayProduct(cart, "Salad lettuces", 1200.00);
+                        addProduct(cart, "Salad lettuces", 1200.00);
                         break;
                     case 2:
                         system("cls");
@@ -355,7 +355,7 @@ int main() {
                         cout << "Min. 0.75KG of leafy vegetables x 4 weeks per month x 12 months" << endl;
                         cout << "Suitable for 2-3 pax households" << endl << endl;
                         cout << "RM1200.00" << endl << endl;
-                        displayProduct(cart, "Hearty Asian greens", 1200.00);
+                        addProduct(cart, "Hearty Asian greens", 1200.00);
                         break;
                     case 3:
                         system("cls");
@@ -367,7 +367,7 @@ int main() {
                         cout << "Min. 0.75KG of leafy vegetables x 4 weeks per month x 12 months" << endl;
                         cout << "Suitable for 2-3 pax households" << endl << endl;
                         cout << "RM1200.00" << endl <<endl;
-                        displayProduct(cart, "Salad & Asian Mix", 1200.00);
+                        addProduct(cart, "Salad & Asian Mix", 1200.00);
                         break;
                     case 0:
                         break;
@@ -395,7 +395,7 @@ int main() {
                 cout << "5. Netpot" << endl;
                 cout << "6. x4 sponges" << endl << endl;
                 cout << "Price: RM19.00" << endl << endl;
-                displayProduct(cart, "Farm Kit", 19.00);
+                addProduct(cart, "Farm Kit", 19.00);
                 break;
             // compost kit
             case 4:
@@ -408,7 +408,7 @@ int main() {
                 cout << "2. 1 pack of bokashi powder" << endl;
                 cout << "3. 1 set of tools" << endl << endl;
                 cout << "Price: RM49.00" << endl << endl;
-                displayProduct(cart, "Compost Kit", 49.00);
+                addProduct(cart, "Compost Kit", 49.00);
                 break;
                 //microgreens kit
             case 5:
@@ -422,7 +422,7 @@ int main() {
                 cout << "3. Gardening tool" << endl;
                 cout << "4. Grow Tray" << endl;
                 cout << "5. Grow Guide" << endl << endl;
-                displayProduct(cart, "Microgreens Kit", 35.00);
+                addProduct(cart, "Microgreens Kit", 35.00);
                 break;
             default:
                 system("cls");
