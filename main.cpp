@@ -439,7 +439,7 @@ int main() {
                 double totalPrice = cart.getTotalPrice();
                 cout << endl << "Total Price: RM" << totalPrice << endl << endl;    // Display the total price.
                 SetConsoleTextAttribute(h, 2);
-                cout << "THANK YOU FOR SHOPPING WITH U";
+                cout << "THANK YOU FOR SHOPPING WITH US";
                 SetConsoleTextAttribute(h, 7);
                 quit = true;    // Stop the loop and exit the program.
                 break;
